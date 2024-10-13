@@ -1,0 +1,1577 @@
+﻿
+
+
+
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Госзайм РФ</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+  <link href="css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+      <style>
+      :root {
+        --themeColor: #0060d0;
+        --themeColorActive: #0051af;
+        --themeSecondaryColor: #ff6a22;
+        --themeSecondaryColorActive: #ec5b15;
+        --textColor: #212121;
+        --labelBgColorRgb: rgba(255, 106, 34, 0.1);
+        --labelBgColorRgbActive: rgba(52, 182, 255, 0.6);
+        --blockGradient: linear-gradient(180deg, #e1efff 0%, rgba(225, 239, 255, 0.2) 100%);
+        --informationBgColor: #e1efff;
+      }
+    </style>
+  
+                  <link rel="stylesheet" href="assets/fin_showcase__michelangelo/styles/main.css?key=1234">
+    
+
+  
+  
+  
+  <script>
+    window.siteId = 823;
+  </script>
+</head>
+<body class="_open-spinner">
+  <svg display="none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="arrow-up">
+    <svg width="24" height="24" viewbox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.3604 12.6791L12.9605 5.27919L20.3604 12.6791Z"></path>
+      <path d="M12.9605 5.27919L12.9605 21.0395C12.9605 21.57 12.5304 22 12 22C11.4696 22 11.0395 21.57 11.0395 21.0395L11.0395 5.27919L3.63959 12.6791C3.26451 13.0542 2.65639 13.0542 2.28131 12.6791C1.90623 12.3041 1.90623 11.6959 2.28131 11.3209L11.3209 2.28131C11.4129 2.18922 11.5191 2.11975 11.6324 2.07288C11.7456 2.02592 11.8698 2 12 2C12.2642 2 12.5035 2.10666 12.6771 2.27928"></path>
+      <path d="M21.7187 12.6791C21.3436 13.0542 20.7355 13.0542 20.3604 12.6791L12.9605 5.27919L12.9605 21.0395C12.9605 21.57 12.5304 22 12 22C11.4696 22 11.0395 21.57 11.0395 21.0395L11.0395 5.27919L3.63959 12.6791C3.26451 13.0542 2.65639 13.0542 2.28131 12.6791C1.90623 12.3041 1.90623 11.6959 2.28131 11.3209L11.3209 2.28131C11.4129 2.18922 11.5191 2.11975 11.6324 2.07288C11.7456 2.02592 11.8698 2 12 2C12.2642 2 12.5035 2.10666 12.6771 2.27928L17.1991 6.80129L21.7187 11.3209C22.0938 11.6959 22.0938 12.3041 21.7187 12.6791Z"></path>
+    </svg>
+  </symbol>
+</svg>
+  <div class="wrapper">
+    <div class="header">
+                                                            
+      <div class="header__navbar">
+        
+                  <div class="geo" id="geo">
+            <div class="geo__label"></div>
+            <div class="geo__city"></div>
+          </div>
+
+          <div class="geo-current" id="geoCurrent">
+            <div class="geo-current__modal">
+              <div class="geo__close">
+              <span class="geo__close-line"></span>
+                <span class="geo__close-line"></span>
+              </div>
+              <div class="geo-current__wrapper">
+                <div class="geo-current__header">
+                  <div class="geo-current__label">Ваш город</div>
+                  <div class="geo-current__city">
+                    <span class="geo-current__city-select">Нижний Новгород</span>?
+                  </div>
+                </div>
+                <div class="geo-current__buttons">
+                  <div class="button" id="geoCurrentСorrectly">Все верно</div>
+                  <div class="button geo__button" id="geoCurrentOther" onclick="openGeoWindow('#geoWindow')">Выбрать другой</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="geo-select" id="geoWindow" onclick="disableGeoWindow('#geoWindow')">
+            <div class="geo-select__modal">
+              <div class="geo__close" onclick="disableGeoWindow('#geoWindow')">
+                <span class="geo__close-line"></span>
+                <span class="geo__close-line"></span>
+              </div>
+              <div class="geo-select__wrapper">
+                <div class="geo-select__label">Выберите ваш город</div>
+                <form class="geo-select__form">
+                  <input class="geo-select__input" type="text" placeholder="Начните вводить название">
+                  <input type="hidden" name="region">
+                  <input type="hidden" name="city">
+                  <button class="button">Выбрать</button>
+                </form>
+                <div class="button geo__button" onclick="disableGeoWindow('#geoWindow')">Отменить</div>
+              </div>
+            </div>
+          </div>
+        
+        <div class="header__counter" id="counter">
+          <div class="header__counter-today">на 13.10.2024</div>
+          <div class="header__counter-request">
+            <span class="header__counter-value"></span>
+            <span class="header__counter-label _none-mobile">одобренных заявок</span>
+            <span class="header__counter-label _inline-mobile">одобрений</span>
+          </div>
+        </div>
+
+                  <div class="header__burger">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </div>
+              </div>
+
+              <ul class="header__menu">
+                                                    <li class="header__menu-item">
+                  <a class="header__menu-link" href="#block-2">
+                    Займы под 0%!
+                  </a>
+                </li>
+                                            </ul>
+      
+      <div class="header__info">
+        <div class="container">
+                      <h1 class="header__title">ГОС займ - займы по льготной государственной программе</h1>
+                                <p class="header__subtitle">Мы подобрали займ для Вас!</p>
+                  </div>
+      </div>
+    </div>
+
+                <div class="block" id="block-2">
+        <div class="container">
+                      <div class="block__header">
+                              <h2 class="block__title">Займы под 0%!</h2>
+                                            <h3 class="block__subtitle">Получите займ без переплат даже с плохой кредитной историей:</h3>
+                          </div>
+          
+          
+                      <div class="h-row">
+      
+          
+
+  
+
+
+<a href="https://go.leadgid.ru/aff_c?aff_id=76555&offer_id=5024&p=adnetwork" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="5024" data-stat-offer-block="1" data-stat-offer-position="1" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="offer.logo/051c6c782b577beb3d805ad08ce0ff2466a16742.png" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 31 дня</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">95%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">30 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Высокое одобрение</p><p>- Высокая скорость получения</p><p>- Первый кредит&nbsp;бесплатно</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+    
+    
+          
+          
+
+  
+
+
+<a href="https://go.leadgid.ru/aff_c?aff_id=76555&offer_id=6470&p=adnetwork " target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="6470" data-stat-offer-block="1" data-stat-offer-position="3" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="fin_showcase_offer.logo/9a4bb3d07ad84b998ba2253b5f328cbb.svg" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 30 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">93%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">30 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>-Автоматическая проверка заявки на кредит за 2 минуты и перевод денег за 11 секунд</p><p>-Автоматическое улучшение кредитной истории после успешно закрытого кредита</p><p>-Выдача онлайн-кредита в любое время суток</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+
+<a href="https://rfnd.io/t/ng7gr/?pid=159&erid=2SDnjcYQDNg" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="3127" data-stat-offer-block="1" data-stat-offer-position="2" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="https://ekapusta.com/assets/images/theme/logo.svg" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 20 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 31 дня</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">94%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">30 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- 0% для новых клиентов!</p><p>- Полностью онлайн</p><p>- Без справок</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+          
+
+  
+
+
+<a href="https://rfnd.io/t/reqm7/?pid=408" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="4821" data-stat-offer-block="1" data-stat-offer-position="4" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="offer.logo/def5dcf0f2e3fa170fc25a36975762d279849b16.png" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0.000-292.000%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 180 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">94%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">100 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Первый займ бесплатно</p><p>- Займ на длительный срок</p><p>- Сервис по управлению займом</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href="https://rfnd.io/t/ru4e2/?pid=559" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="5809" data-stat-offer-block="1" data-stat-offer-position="5" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="fin_showcase_offer.logo/031fe0b221da4ed181bbed3844ebe3a5.png" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 30 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">94%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">30 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Первый кредит бесплатно</p><p>- Без посещения офиса</p><p>- По одному паспорту</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href="https://rfnd.io/t/zs43x/?pid=14" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="4472" data-stat-offer-block="1" data-stat-offer-position="6" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="offer.logo/55361e85298b821cf13819632a7dd703aa767d74.png" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 30 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">92%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">30 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Не выдается на карту OZON и другие виртуальные карты</p><p>- Быстрое одобрение</p><p>- Низкая процентная ставка</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href="https://go.leadgid.ru/aff_c?aff_id=76555&offer_id=1782&p=adnetwork" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="5316" data-stat-offer-block="1" data-stat-offer-position="7" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="https://mikrobanki.ru/wp-content/uploads/2022/10/вивиус.jpg" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 30 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">93%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">30 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Первые 5 дней бесплатно</p><p>- Максимально одобрение</p><p>- Решение и деньги всего за 15 минут</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href=" https://rfnd.io/t/ng7gr/?pid=159&erid=2SDnjcYQDNg" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="2577" data-stat-offer-block="1" data-stat-offer-position="8" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="offer.logo/e47f7f5351951d2cc84f2cc0abed338a5d33a447.png" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 168 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">93%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">50 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Высокий процент одобрения</p><p>- Деньги на карте за 15 минут</p><p>-&nbsp;Без сбора документов и залога</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href=" https://go.leadgid.ru/aff_c?aff_id=76555&offer_id=5562&p=adnetwork" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="5562" data-stat-offer-block="1" data-stat-offer-position="9" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="offer.logo/c68fd757e94cfd8222b0e1eab0c5c48a07d091ac.png" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 30 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">94%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">30 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Получение всего за 15 минут</p><p>- Низкая процентная ставка</p><p>- Выдача только по паспорту</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href=" https://go.leadgid.ru/aff_c?aff_id=76555&offer_id=4029&p=adnetworkg" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="6093" data-stat-offer-block="1" data-stat-offer-position="10" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="https://avatars.mds.yandex.net/i?id=0b3b2f3427155222d2e597d8bc4c0d03452dc46c-5295169-images-thumbs&n=13" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 180 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">90%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">30 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>-Первый заем бесплатно</p><p>-Высокое одобрение </p><p>-Работает по всей России </p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href="https://rfnd.io/t/r7b3f/?pid=602" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="3339" data-stat-offer-block="1" data-stat-offer-position="11" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="fin_showcase_offer.logo/6e0e77c6652341cb997d840e82006347.png" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 168 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">95%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">100 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Деньги из любой точки мира</p><p>-&nbsp;Первый займ бесплатно</p><p>-&nbsp;Множество способов получения</p><p>&nbsp;</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href="https://rfnd.io/t/2mupg/?pid=327" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="4759" data-stat-offer-block="1" data-stat-offer-position="12" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="offer.logo/3a3fcecc9fa494afb34881b8bd77edeb6822ed51.png" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 179 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">94%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">100 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Скидки на проценты по займу</p><p>- Мгновенный перевод денег на карту</p><p>- Выдача по одному паспорту</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href="https://go.leadgid.ru/aff_c?aff_id=76555&offer_id=4412&p=adnetwork" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="4412" data-stat-offer-block="1" data-stat-offer-position="13" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="offer.logo/6dd5dc395ede3842660427b362e2b97d6b36cd88.png" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 6 месяцев</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">90%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">50 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Быстрое оформление</p><p>- Различные способы погашения </p><p>- Спецпредложения для постоянных клиентов.</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href=" https://go.leadgid.ru/aff_c?aff_id=76555&offer_id=6097&p=adnetwork" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="6097" data-stat-offer-block="1" data-stat-offer-position="14" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="fin_showcase_offer.logo/4dd8ea291c384c0d96547316ad5ba417.png" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 365 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">94%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">100 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Первый кредит бесплатно</p><p>- На длительный срок</p><p>- Высокое одобрение</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href="https://rfnd.io/t/vzhkz/?pid=25" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="4452" data-stat-offer-block="1" data-stat-offer-position="15" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="https://www.ezaem.ru/gamification/src/assets/images/logo.svg" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 31 дня</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">91%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">30 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Прозрачные условия</p><p>- С любой кредитной историей</p><p>- Без справок</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href="https://rfnd.io/t/vnnpj/?pid=67&erid=2SDnjeV5cGp" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="4464" data-stat-offer-block="1" data-stat-offer-position="16" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="offer.logo/536ebe4623fd777c28accbf23443a8aab14e80ea.png" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 30 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">93%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">100 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Деньги, не выходя из дома</p><p>- Без скрытых комиссий и переплат</p><p>- Множество способов погашения</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+          
+          
+
+  
+
+
+<a href="https://rfnd.io/t/2ehkk/?pid=24" target="_blank" class="h-mfo__wrapper " data-stat-offer="" data-stat-offer-site-id="823" data-stat-offer-resource="block" data-stat-offer-leadgid-offer-id="3339" data-stat-offer-block="1" data-stat-offer-position="17" data-popunder="" onclick="onOfferClick('')">
+  
+  <div class="h-mfo ">
+    <div class="h-mfo__header">
+      <div class="h-mfo__logo">
+                    <img src="https://avatars.mds.yandex.net/i?id=2cc2ad79c006005183a7678a8ae14a9a480cc8ae-8244520-images-thumbs&n=13" class="h-mfo__logo-img" alt="" width="" height="">
+    
+      </div>
+              <div class="h-mfo__mark">Первый займ БЕСПЛАТНО!</div>
+          </div>
+
+    <div class="h-mfo__main">
+      <ul class="h-mfo__list">
+                  <li class="h-mfo__list-item _percent">
+            <div class="h-mfo__list-item-property _desktop">ПСК</div>
+            <div class="h-mfo__list-item-property _mobile">ПСК</div>
+            <div class="h-mfo__list-item-value">от 0-292%</div>
+          </li>
+                <li class="h-mfo__list-item _age">
+          <div class="h-mfo__list-item-property">Возраст</div>
+          <div class="h-mfo__list-item-value">от 18 лет</div>
+        </li>
+                  <li class="h-mfo__list-item _term">
+            <div class="h-mfo__list-item-property _mobile">Срок</div>
+            <div class="h-mfo__list-item-property _desktop">Срок</div>
+            <div class="h-mfo__list-item-value">до 168 дней</div>
+          </li>
+                          <li class="h-mfo__list-item _approve-percent">
+            <div class="h-mfo__list-item-property">Одобрение</div>
+            <div class="h-mfo__list-item-value">94%</div>
+          </li>
+                      </ul>
+      <div class="h-mfo__limit">100 000 ₽</div>
+      <button class="h-mfo__button button">
+                  Получить деньги
+              </button>
+
+      <div class="h-mfo__main-info">
+                  <div class="h-mfo__description">
+              <div class="description ">
+    <div class="description__content">
+      <p>- Деньги из любой точки мира</p><p>-&nbsp;Первый займ бесплатно</p><p>-&nbsp;Множество способов получения</p><p>&nbsp;</p>
+    </div>
+    
+    <div class="description__toggler">
+      <div class="description__toggler-text _open">
+        Показать всё
+      </div>
+      <div class="description__toggler-text _close">
+        Свернуть
+      </div>
+      <svg class="description__toggler-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+</a>
+    
+    
+      </div>
+          
+          
+                  </div>
+      </div>
+    
+    
+
+            <div class="accordion ">
+    <div class="container">
+      <div class="accordion__inner">
+        <div class="accordion__item">
+          <div class="accordion__item-head _open">
+            <h3 class="accordion__item-head-title title-3">Советы заёмщикам</h3>
+            <svg class="accordion__item-head-icon" viewbox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+            </svg>
+          </div>
+          <div class="accordion__item-main">
+                          <div class="text-standart">Что делать если не одобрили займ? Попробуйте уменьшить запрошенную сумму и увеличить срок кредитования. К примеру, если вы брали займ на 15 000 руб. и вам отказали, то нужно разделить эту сумму на 2-3 части, т.е. взять по 5000 руб., в разных МФО, одновременно подавая заявку.</div>
+                          <div class="text-standart">Как увеличить вероятность одобрения. Мы рекоменудем вам подавать заявку одновременно в нескольких компаниях. Кредитным специалистам важно и то, насколько клиент интересуется процентными ставками, графиком погашения и общей переплатой по займу. Ваши заявки, задолженности, активные займы фиксируются, поэтому необходимо подавать заявку сразу, чтобы данные не успели обновится.</div>
+                          <div class="text-standart">Если вам не одобрила ни одна организация, нужно улучшать кредитную историю. Погасите все имеющиеся задолженности, Переждите определенное время и попробуйте несколько раз взять минимальные займы в организациях где вы не брали деньги.</div>
+                          <div class="text-standart">Если не успеваете погасить вовремя - оплатите проценты и продлите свой заем - иначе проценты будут очень большие. Чтобы этого не произошло, необходимо сразу же сообщить сотрудникам кредитной фирмы о своих финансовых трудностях. В этом случае возможно, что компания пойдет вам навстречу и оформит пролонгацию кредитного договора.</div>
+                      </div>
+        </div>
+        <div class="accordion__item">
+          <div class="accordion__item-head">
+            <h3 class="accordion__item-head-title title-3">Требования к заёмщикам</h3>
+            <svg class="accordion__item-head-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+            </svg>
+          </div>
+          <div class="accordion__item-main">
+                          <div class="text-standart">— Гражданство Российской Федерации.</div>
+                          <div class="text-standart">— Возраст заемщика от 18 лет.</div>
+                      </div>
+        </div>
+        <div class="accordion__item">
+          <div class="accordion__item-head">
+            <h3 class="accordion__item-head-title title-3">Информация о полной стоимости займа и пример расчета</h3>
+            <svg class="accordion__item-head-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+            </svg>
+          </div>
+          <div class="accordion__item-main">
+                          <div class="text-standart">Процентная ставка по потребительским кредитам и кредитным картам - от 9,99% до 31% годовых. Например, если Вы взяли кредит на сумму 100 000 рублей на 1 год, то после истечения срока кредита, Вам необходимо будет выплатить от 112 900 до 131 000 рублей.</div>
+                          <div class="text-standart">Срок кредита от 91 дня до 5 лет. Возможно как продление кредита, так и его досрочное погашение. При досрочном погашении комиссия за использование кредита будет пересчитана пропорционально сроку пользования.</div>
+                          <div class="text-standart">Кредит предоставляется в размере 1000 руб. – 1 000 000 руб. Годовой процент за пользование кредитом (с учетом требований ФЗ №353-ФЗ) – 12,5%-36,6%.  Окончательные условия получения будут предложены в индивидуальном порядке.</div>
+                          <div class="text-standart">Дополнительных комиссий при исчисление ставки по кредитам нет.</div>
+                          <div class="text-standart">Размер неустойки составляет 0,10% от суммы просроченной задолженности за каждый день нарушения обязательств, но не более 10% от суммы.</div>
+                          <div class="text-standart">Ставка 0% действует для новых клиентов при условии полного погашения без просрочки.</div>
+                      </div>
+        </div>
+        <div class="accordion__item">
+          <div class="accordion__item-head">
+            <h3 class="accordion__item-head-title title-3">Последствия невыплаты заёмных средств</h3>
+            <svg class="accordion__item-head-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+            </svg>
+          </div>
+          <div class="accordion__item-main">
+                          <div class="text-standart">В случае невозвращения общей суммы кредита кредитор вынуждено начислит штраф за просрочку. Большинство кредиторов идут на уступки и дают дополнительные 3 рабочих дня для оплаты. Они предусмотрены специально для Вас на случай, к примеру, если банковский перевод занял больше времени, чем обычно, или Вы просто поздно отправили сумму. Однако в случае неполучения от Вас какой-либо реакции в течение продолжительного времени будет начислен штраф за просрочку погашения кредита размером в среднем 0,10% от первоначальной суммы кредита, данные о Вас могут быть переданы в реестр должников, а задолженность - коллекторскому агентству для взыскания долга.</div>
+                          <div class="text-standart">О всех приближающихся сроках платежа кредитор своевременно информирует Вас по СМС и электронной почте. Рекомендуем Вам вносить платеж в день получения данных напоминаний. Так Вы сохраните репутацию добросовестного заемщика и сможете получить скидки при последующем обращении в организацию.</div>
+                          <div class="text-standart">Предложение не является оффертой. Конечные условия уточняйте при прямом общении с кредиторами.</div>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+                  
+  <div class="information">
+    <div class="container">
+      <div class="information__inner">
+        <div class="information__head">
+          <h3 class="information__head-title title-3">Информация о кредиторах, представленных на сайте</h3>
+          <svg class="information__head-icon" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.00015 5.33333C4.83288 5.33333 4.66562 5.26931 4.53809 5.14153L0.524962 1.1185C0.269674 0.86259 0.269674 0.447669 0.524962 0.191858C0.780146 -0.0639527 1.19397 -0.0639527 1.44928 0.191858L5.00015 3.75165L8.55104 0.191982C8.80633 -0.0638283 9.22011 -0.0638283 9.47527 0.191982C9.73068 0.447793 9.73068 0.862714 9.47527 1.11863L5.4622 5.14165C5.33461 5.26945 5.16736 5.33333 5.00015 5.33333Z" fill="currentColor"></path>
+          </svg>
+          <div class="information__head-toggler"></div>
+        </div>
+        <div class="information__grid">
+                                                                                                      <div class="information__grid-item">
+                    <div class="text-standart">ООО МФК "МАНИ МЕН", ОГРН 1117746442670, ИНН/КПП 7704784072 / 773001001, Телефон +7 (495) 66-62-125, Адрес 121096, г. Москва, ул. Василисы Кожиной д.1, оф. Д13</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО МФК "ВЭББАНКИР", ОГРН 1127746630846, ИНН/КПП 7733812126 / 773301001, Телефон 8 800 775-54-54, Адрес 125466, г. Москва, ул. Соколово-Мещерская, д. 29, офис 308</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО МФК «Займер», ОГРН 1134205019189, ИНН/КПП 4205271785/540601001, Телефон 88007070247, Адрес 630099, Новосибирская область, г. Новосибирск, ул. Октябрьская Магистраль, д. 3, оф. 906</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО МКК «Срочноденьги», ОГРН 1105260001857, ИНН/КПП 5260271530 / 526001001, Телефон 8 (495) 145-33-55, Адрес 603022, Нижегородская область, город Нижний Новгород, ул. Тимирязева, д. 15 к. 2, помещ. 403</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО МКК «Каппадокия», ОГРН 1197456052199, ИНН/КПП 7459007268 / 631901001, Телефон 8 (800) 222 80 22, Адрес 443011, Самарская область, г Самара, Ново-Садовая ул, д. 307а, этаж 6 помещ. 6</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО МКК «КапиталЪ-НТ», ОГРН 1146623008707, ИНН/КПП 6623106990 / 631201001, Телефон 8 (800) 222 42 20, Адрес 443095, Самарская область, город Самара, ул. Стара Загора, влд 202а, офис 301</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО МКК «ТВОЙ.КРЕДИТ», ОГРН 1157456011646, ИНН/КПП 7459004130/784101001, Телефон 88005559532, Адрес 191187, г. Санкт-Петербург, ул. Шпалерная, д. 8, литер А, эт/пом/ком ц/16-Н/9</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО МКК Турбозайм, ОГРН 1137746702367, ИНН/КПП 7702820127 / 771401001, Телефон 8 499 951 91 80, Адрес 123290, город Москва, 1-й Магистральный туп., д. 11 стр 10</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО МКК «УН-ФИНАНС», ОГРН 1177746280337, ИНН/КПП 9721044508/784201001, Телефон 8-800-333-02-73, Адрес 191036, г. Санкт-Петербург, вн. тер. г. Муниципальный округ Лиговка-Ямская, ул. Гончарная, д. 13, лит. А, пом. 12-Н, оф. 214</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart"><p>ООО МКК «А ДЕНЬГИ», ОГРН 1217700636944, ИНН/КПП 7708400979/770801001, Телефон 88007007700, Адрес 107078, вн. тер. г. Муниципальный округ Красносельский, ул. Маши Порываевой, д. 7, стр. А, эт./пом./комн. 8/5-6Б/805-806</p></div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО МФК «Джой Мани», ОГРН 1145476064711, ИНН/КПП 5407496776 / 540601001, Телефон 8-499-490-25-64, Адрес 630099, г. Новосибирск, ул. Советская, д. 12, этаж 4.</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО «МФК НФ», ОГРН 1166196099057, ИНН/КПП 6162073437/616201001, Телефон 88007004348, Адрес 344034, Ростовская область, г. Ростов-на-Дону, ул. Портовая, д. 193, оф. 310</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО МФК «Займ Онлайн», ОГРН 1127746428171, ИНН/КПП 7703769314 / 771401001, Телефон 8 800 555 2435, Адрес 127083, г. Москва, ул. 8 Марта, д. 1, стр. 12, пом. LVI, ком. 2-7</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО МКК "«ДЗП-Развитие 3»", ИНН 7838031539, ОГРН 1157847007691, Рег. № записи в гос. реестре МФО 2303140009956 от 19.05.2023). Адрес: 197374, г. Санкт-Петербург, Мебельная улица, дом 12, корпус 1, лит. А, пом. 53-Н, ком. 433.</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">ООО МКК «ФИНТЕРРА», ОГРН 1114205007443, ИНН/КПП 4205219217 / 540601001, Телефон 8 800 301 43 44, Адрес 630099, Новосибирская область, город Новосибирск, ул. Октябрьская магистраль, д. 3, офис 903</div>
+                  </div>
+                                                                                                                          <div class="information__grid-item">
+                    <div class="text-standart">МФК Быстроденьги (ООО), ОГРН 1087325005899, ИНН/КПП 7325081622 / 771401001, Телефон 8 800 700 43 44, Адрес 123290, город Москва, 1-й Магистральный туп., д. 11 стр 10</div>
+                  </div>
+                                                                                                    </div>
+      </div>
+    </div>
+  </div>
+          
+      <div class="note">
+    <div class="container">
+      <div class="note__inner">
+        <p class="text-standart">Настоящий сайт не принадлежит финансовой организации и на нём не оказываются финансовые услуги. Настоящий сайт является составным произведением, которое представляет собой в том числе каталог товарных знаков (знаков обслуживания), опубликованных в открытых реестрах ФИПС (Роспатент) и сопровождающихся подобранным каталогом финансовых услуг. Финансовые услуги из каталога оказываются непосредственно финансовыми организациями, и до их заказа вы должны ознакомиться с условиями документов, опубликованных непосредственно финансовой организацией. Исключительное право на товарные знаки (знаки обслуживания), представленные в вышеуказанном каталоге, принадлежат их правообладателям и охраняются в соответствии с выданными ФИПС (Роспатент) правоустанавливающими документами для индивидуализации товаров, работ или услуг их непосредственных правообладателей.</p>
+      </div>
+    </div>
+  </div>
+    <div class="footer">
+  <div class="container">
+    <div class="footer__post">
+      <noindex>
+        
+      </noindex>
+    </div>
+
+      </div>
+</div>
+
+          <div class="spinner">
+        <div class="spinner__container">
+          <div class="spinner__text">Идет подбор предложений</div>
+          <div class="spinner__icon">
+            <div class="spinner__icon-inner">
+              <div class="spinner__icon-item"></div>
+              <div class="spinner__icon-item _active"></div>
+              <div class="spinner__icon-item"></div>
+              <div class="spinner__icon-item"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <a class="button-up" id="button-up">
+      <svg>
+        <use href="#arrow-up"></use>
+      </svg>
+    </a>
+
+    
+
+
+    <script src="ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+                    <script src="assets/shared_scripts/js/shave-5.0.2.js?key=1234"></script>
+    
+                    <script src="assets/fin_showcase__michelangelo/js/main.js?key=1234"></script>
+    
+                    <script src="jquery-3.6.0.min.js?key=1234"></script>
+    
+                    <link rel="stylesheet" href="assets/widgets/styles/widget-groups.css?key=1234">
+    
+                    <script src="assets/widgets/js/widget-groups.js?key=1234"></script>
+    
+
+                    <script src="assets/shared_scripts/js/counter.js?key=1234"></script>
+    
+
+        <script>
+    window.statisticsSiteId = 823;
+    window.statisticsPageUrl = window.location.href;
+    window.statisticsPageQuery = '';
+</script>
+
+                <script src="assets/shared_scripts/js/fin-showcase__statistics.js?key=1234"></script>
+    
+    <script>window.createCounter(".header__counter-value")</script>
+
+                          <link rel="stylesheet" href="ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.css">
+    
+                      <script src="ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.min.js?key=1234"></script>
+    
+                      <script src="assets/fin_showcase__michelangelo/js/geoWindow.js?key=1234"></script>
+    
+
+      
+      <script>openGeoCurrent();</script>
+    
+    
+
+
+
+
+
+<script>
+  function onOfferClick(siteOfferMetrikaGoal) {
+    var globalMetrikaGoal = '';
+    var metrikaGoal = siteOfferMetrikaGoal || globalMetrikaGoal;
+    var counterGoogleAnalyticsGoal = '';
+    if (window.ym && metrikaGoal) {
+      ym('', 'reachGoal', metrikaGoal);
+    }
+    if (window.gtag && counterGoogleAnalyticsGoal) {
+      gtag('event', counterGoogleAnalyticsGoal);
+    }
+	}
+
+  document.addEventListener('DOMContentLoaded', function() {
+    [
+      document.querySelector('[data-stat-offer-resource=widget]'),
+      document.querySelector('[data-stat-offer-resource=trafficback]')
+    ].forEach(function(item) {
+      item && item.addEventListener('click', function() {
+        onOfferClick()
+      })
+    })
+  })
+</script>                    <script src="assets/shared_scripts/js/fin-showcase.js?key=1234"></script>
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+Uri: https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\ajax\libs\jquery\3.6.3\jquery.min.js
+Content Type: text/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.css
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\ajax\libs\jquery-autocomplete\1.0.7\jquery.auto-complete.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.min.js?key=1234
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\ajax\libs\jquery-autocomplete\1.0.7\jquery.auto-complete.min.js
+Content Type: application/javascript
+
+Uri: https://code.jquery.com/jquery-3.6.0.min.js?key=1234
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\jquery-3.6.0.min.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://gos-zaem.ru//
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\index.htm
+Content Type: text/html
+
+Uri: https://gos-zaem.ru/assets/fin_showcase__michelangelo/js/geoWindow.js?key=1234
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\assets\fin_showcase__michelangelo\js\geoWindow.js
+Content Type: application/javascript
+
+Uri: https://gos-zaem.ru/assets/fin_showcase__michelangelo/js/main.js?key=1234
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\assets\fin_showcase__michelangelo\js\main.js
+Content Type: application/javascript
+
+Uri: https://gos-zaem.ru/assets/fin_showcase__michelangelo/styles/main.css?key=1234
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\assets\fin_showcase__michelangelo\styles\main.css
+Content Type: text/css
+
+Uri: https://gos-zaem.ru/assets/shared_scripts/js/counter.js?key=1234
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\assets\shared_scripts\js\counter.js
+Content Type: application/javascript
+
+Uri: https://gos-zaem.ru/assets/shared_scripts/js/fin-showcase.js?key=1234
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\assets\shared_scripts\js\fin-showcase.js
+Content Type: application/javascript
+
+Uri: https://gos-zaem.ru/assets/shared_scripts/js/fin-showcase__statistics.js?key=1234
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\assets\shared_scripts\js\fin-showcase__statistics.js
+Content Type: application/javascript
+
+Uri: https://gos-zaem.ru/assets/shared_scripts/js/shave-5.0.2.js?key=1234
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\assets\shared_scripts\js\shave-5.0.2.js
+Content Type: application/javascript
+
+Uri: https://gos-zaem.ru/assets/widgets/js/widget-groups.js?key=1234
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\assets\widgets\js\widget-groups.js
+Content Type: application/javascript
+
+Uri: https://gos-zaem.ru/assets/widgets/styles/widget-groups.css?key=1234
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\assets\widgets\styles\widget-groups.css
+Content Type: text/css
+
+Uri: https://lead-core.s3-cdn.com/fin_showcase_offer.logo/031fe0b221da4ed181bbed3844ebe3a5.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\fin_showcase_offer.logo\031fe0b221da4ed181bbed3844ebe3a5.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/fin_showcase_offer.logo/49d0c6219dd8429d862900dca16f73f0.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\fin_showcase_offer.logo\49d0c6219dd8429d862900dca16f73f0.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/fin_showcase_offer.logo/4dd8ea291c384c0d96547316ad5ba417.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\fin_showcase_offer.logo\4dd8ea291c384c0d96547316ad5ba417.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/fin_showcase_offer.logo/6e0e77c6652341cb997d840e82006347.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\fin_showcase_offer.logo\6e0e77c6652341cb997d840e82006347.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/fin_showcase_offer.logo/9a4bb3d07ad84b998ba2253b5f328cbb.svg
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\fin_showcase_offer.logo\9a4bb3d07ad84b998ba2253b5f328cbb.svg
+Content Type: image/svg+xml
+
+Uri: https://lead-core.s3-cdn.com/fin_showcase_offer.logo/a467f9ac7e314466af6a758ca1a1652d.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\fin_showcase_offer.logo\a467f9ac7e314466af6a758ca1a1652d.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/offer.logo/051c6c782b577beb3d805ad08ce0ff2466a16742.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\offer.logo\051c6c782b577beb3d805ad08ce0ff2466a16742.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/offer.logo/22876ae5351e03777beb97530e2c5588324daf2c.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\offer.logo\22876ae5351e03777beb97530e2c5588324daf2c.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/offer.logo/3a3fcecc9fa494afb34881b8bd77edeb6822ed51.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\offer.logo\3a3fcecc9fa494afb34881b8bd77edeb6822ed51.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/offer.logo/536ebe4623fd777c28accbf23443a8aab14e80ea.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\offer.logo\536ebe4623fd777c28accbf23443a8aab14e80ea.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/offer.logo/55361e85298b821cf13819632a7dd703aa767d74.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\offer.logo\55361e85298b821cf13819632a7dd703aa767d74.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/offer.logo/6c4b9a7e1e159a599b80c0d1ed362dd805d83718.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\offer.logo\6c4b9a7e1e159a599b80c0d1ed362dd805d83718.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/offer.logo/6dd5dc395ede3842660427b362e2b97d6b36cd88.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\offer.logo\6dd5dc395ede3842660427b362e2b97d6b36cd88.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/offer.logo/c68fd757e94cfd8222b0e1eab0c5c48a07d091ac.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\offer.logo\c68fd757e94cfd8222b0e1eab0c5c48a07d091ac.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/offer.logo/def5dcf0f2e3fa170fc25a36975762d279849b16.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\offer.logo\def5dcf0f2e3fa170fc25a36975762d279849b16.png
+Content Type: image/png
+
+Uri: https://lead-core.s3-cdn.com/offer.logo/e47f7f5351951d2cc84f2cc0abed338a5d33a447.png
+File Name: C:\Downloaded Web Sites\gos-zaem.ru\offer.logo\e47f7f5351951d2cc84f2cc0abed338a5d33a447.png
+Content Type: image/png
+

@@ -1,0 +1,1 @@
+"use strict";window.createCounter=function(t){var e,n=document.querySelector(t);function o(){n.innerText=e.toString()}function r(){setTimeout(function(){e+=1,localStorage.setItem("start",e),o(),r()},Math.round(4*Math.random()*3e3+1e3))}n&&(t=Number(localStorage.getItem("start")),e=t&&t<4e3?t:1234,o(),r())};
